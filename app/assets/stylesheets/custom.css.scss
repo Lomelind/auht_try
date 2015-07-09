@@ -1,0 +1,56 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$gray-medium-light: #eaeaea;
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+body{
+	padding-top: 60px;
+}
+
+section{
+	overflow: auto;
+}
+
+textarea{
+	resize: vertical;
+}
+
+.center{
+	text-align: center;
+	h1{
+		margin-bottom: 10px;
+	}
+}
+
+.about{
+	text-align: center;
+}
+/*   header   */
+
+#logo{
+	float: left;
+	margin-right: 10px;
+	font-size: 1.7em;
+	color: $gray-medium-light;
+	font-weight: bold;
+	padding-top: 9px;
+	letter-spacing: -1px;
+	&:hover{
+		color: #aaa;
+		text-decoration: none;
+	};
+}
+.footer{
+	position: fixed;
+	height: 60px;
+	bottom: 0;
+	width: 100%;
+}
+.jumbotron {
+background-image: url(http://i.imgur.com/5ahTckK.jpg?1);
+background-size: cover;
+height: 100%;}
